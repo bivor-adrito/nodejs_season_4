@@ -51,6 +51,10 @@ Overview
     - Update [DONE]
     - Delete [DONE]
 
+8. Authentication
+    - Create user using Password and email
+    - Login with email
+
 
 Commands
     - node -v
@@ -64,6 +68,8 @@ Commands
     - npm i body-parser --save
     - npm i mongoose --save
     - npm i dotenv --save
+    - npm i bcrypt --save
+    - npm i jsonwebtoken --save
 
 Rules: 
     - Communication - Discord

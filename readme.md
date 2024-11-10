@@ -103,6 +103,7 @@ Database Structure
     category: string,
     fileId: objectId,
     pQty: number
+    isDeleted: boolean
  }
  - File {
     name: string,

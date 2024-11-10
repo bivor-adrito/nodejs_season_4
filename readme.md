@@ -52,10 +52,21 @@ Overview
     - Delete [DONE]
 
 8. Authentication
-    - Create user using Password and email
-    - Login with email
+    - Create user using Password and email [Done]
+    - Login with email [DONE]
+    - Create a middleware for authentication [DONE]
+    - Login with refresh token [Done]
 
 
+
+Home Project:
+ - To-Do app:
+    - using auth flow
+    1. Will be able to create task
+    2. Will be able to view my own task details [use auth middleware]
+    3. Will be able to update task
+    4. Will be able to update task status
+    5. Will be able to delete a task
 Commands
     - node -v
     - npm -v

@@ -35,6 +35,12 @@ router.post("/login", async (req, res) => {
       }else{
         await handleEmailLogin(password, user, res)
       }
+    }else{
+      if(!refreshToken){
+        return res.status(401).json({ message: "Refresh token not found" });
+      }else{
+        await handleRefreshToken(refreshToken, res)
+      }
     }
   } catch (error) {
     res.status(500).json({ message: "Something went wrong" });
@@ -148,4 +154,21 @@ function generateToken(user) {
         expiresIn: '30d'
     });
     return { accessToken, refreshToken };
+}
+
+function handleRefreshToken(refreshToken, res){
+  jwt.verify(refreshToken, process.env.JWT_SECRET, async (err, payload) =>{
+    if(err){
+      return res.status(404).json({message: "Unauthorized"})
+    }else{
+      const user = await User.findById(payload._id)
+      if(user){
+        const userObj = generateUserObject(user)
+        return res.status(200).json(userObj)
+      }else{
+      return res.status(404).json({message: "Unauthorized"})
+
+      }
+    }
+  })
 }

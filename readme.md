@@ -57,7 +57,67 @@ Overview
     - Create a middleware for authentication [DONE]
     - Login with refresh token [Done]
 
+9. Single vendor market place
+    Features
+    1. There will be two types of users []
+        a. Admin
+        b. Customer
 
+    - Admins will be able to do the followings
+        1. Admin will be able to create a product []
+        2. Admin will be able to upload an image on the product []
+        3. Admin will be able to update a product []
+        4. Admin will be able to see all the products []
+        5. Admin will be able to see a specific product []
+        6. Admin will be able to delete [amend] a product []
+        7. Admin will be able to see a specific order []
+        8. Admin will be able to make change to an order []
+        9. Admin will be able to update status of a order []
+        10. Admin will be able to delete an order []
+
+
+    - Customers will be able to do the followings
+        1. Customers will be able to see all the products []
+        2. Customers will be able to see the details of a product []
+        3. Customers will be able to make an order []
+        4. Customers will be able to see a specific order []          
+        5. Customers will be able to cancel an order []
+
+    - Customers will NOT be able to do the followings
+        1. Customers will not be able to create a product []
+        2. Customers will not be able to upload an image on the product []
+        3. Customers will not be able to update a product []
+        4. Customers will not be able to delete a product []
+
+Database Structure
+ - User {
+    ...user
+    userType: [customer, admin]
+ }
+ - Product {
+    name: string,
+    description: string,
+    madeIn: string,
+    price: number,
+    userId: objectId,
+    category: string,
+    fileId: objectId,
+    pQty: number
+ }
+ - File {
+    name: string,
+    path: string,
+ }
+ - Order{
+    productId: ObjectId,
+    userId: ObjectId,
+    qty: number,
+    total: number,
+    purchaseDate: Date,
+    deliveryLocation: string,
+    expectedDeliveryDate: Date,
+    deliveryStatus: [delivered, in-progress, canceled],
+ }
 
 Home Project:
  - To-Do app:

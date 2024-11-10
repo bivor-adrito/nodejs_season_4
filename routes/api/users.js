@@ -15,6 +15,7 @@ router.post("/", async (req, res) => {
       lname: req.body.lname,
       email: req.body.email,
       password: password,
+      userType: req?.body?.userType || 'customer',
     };
     const user = new User(userObj);
     await user.save();
@@ -143,13 +144,16 @@ function generateUserObject(user){
 function generateToken(user) {
     const accessToken = jwt.sign({
         email: user.email,
-        _id: user._id
+        _id: user._id,
+        userType: user.userType,
     }, process.env.JWT_SECRET, {
         expiresIn: '1d'
     });
     const refreshToken = jwt.sign({
         email: user.email,
-        _id: user._id
+        _id: user._id,
+        userType: user.userType,
+
     }, process.env.JWT_SECRET, {
         expiresIn: '30d'
     });

@@ -22,7 +22,8 @@ const ProductSchema = new mongoose.Schema({
         type: Number
     },
     isDeleted: {
-        type: Boolean
+        type: Boolean,
+        default: false
     },
     userId: {
         type: mongoose.Types.ObjectId,

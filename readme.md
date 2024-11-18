@@ -66,10 +66,10 @@ Overview
     - Admins will be able to do the followings
         1. Admin will be able to create a product [DONE]
         2. Admin will be able to upload an image on the product [DONE]
-        3. Admin will be able to update a product []
-        4. Admin will be able to see all the products []
-        5. Admin will be able to see a specific product []
-        6. Admin will be able to delete [amend] a product []
+        3. Admin will be able to update a product [DONE]
+        4. Admin will be able to see all the products [DONE]
+        5. Admin will be able to see a specific product [DONE]
+        6. Admin will be able to delete [amend] a product [DONE]
         7. Admin will be able to see a specific order []
         8. Admin will be able to make change to an order []
         9. Admin will be able to update status of a order []
@@ -77,17 +77,17 @@ Overview
 
 
     - Customers will be able to do the followings
-        1. Customers will be able to see all the products []
-        2. Customers will be able to see the details of a product []
+        1. Customers will be able to see all the products [DONE]
+        2. Customers will be able to see the details of a product [DONE]
         3. Customers will be able to make an order []
         4. Customers will be able to see a specific order []          
         5. Customers will be able to cancel an order []
 
     - Customers will NOT be able to do the followings
-        1. Customers will not be able to create a product []
-        2. Customers will not be able to upload an image on the product []
-        3. Customers will not be able to update a product []
-        4. Customers will not be able to delete a product []
+        1. Customers will not be able to create a product [DONE]
+        2. Customers will not be able to upload an image on the product [DONE]
+        3. Customers will not be able to update a product [DONE]
+        4. Customers will not be able to delete a product [DONE]
 
 Database Structure
  - User {

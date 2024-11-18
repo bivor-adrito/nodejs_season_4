@@ -59,7 +59,7 @@ Overview
 
 9. Single vendor market place
     Features
-    1. There will be two types of users []
+    1. There will be two types of users [DONE]
         a. Admin
         b. Customer
 
@@ -70,18 +70,18 @@ Overview
         4. Admin will be able to see all the products [DONE]
         5. Admin will be able to see a specific product [DONE]
         6. Admin will be able to delete [amend] a product [DONE]
-        7. Admin will be able to see a specific order []
-        8. Admin will be able to make change to an order []
-        9. Admin will be able to update status of a order []
-        10. Admin will be able to delete an order []
+        7. Admin will be able to see a specific order [DONE]
+        8. Admin will be able to make change to an order [DONE]
+        9. Admin will be able to update status of a order [DONE]
+        10. Admin will be able to delete an order [DONE]
 
 
     - Customers will be able to do the followings
         1. Customers will be able to see all the products [DONE]
         2. Customers will be able to see the details of a product [DONE]
-        3. Customers will be able to make an order []
-        4. Customers will be able to see a specific order []          
-        5. Customers will be able to cancel an order []
+        3. Customers will be able to make an order [DONE]
+        4. Customers will be able to see a specific order [DONE]          
+        5. Customers will be able to cancel an order [DONE]
 
     - Customers will NOT be able to do the followings
         1. Customers will not be able to create a product [DONE]
